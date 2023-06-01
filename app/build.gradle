@@ -40,7 +40,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'junio2023.App'
+    mainClass = 'Junio2023.App'
 }
 
 tasks.named('test') {
