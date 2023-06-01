@@ -1,4 +1,4 @@
-package muit.fs.junio22;
+package junio2023;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -23,8 +23,8 @@ public class FirstDayAtSchoolTest {
 		assertNotNull(newschool, "Object not created");
 		int pens = newschool.getNumberOf("Pens");
 		assertEquals(1, pens, "The number of pens is not the expected");
-		int notebooks = newschool.getNumberOf("Notebooks");
-		assertEquals(1, notebooks, "The number of Notebooks is not the expected");
+		int sharpener = newschool.getNumberOf("Sharpener");
+		assertEquals(1, sharpener, "The number of sharpener is not the expected");
 		Set<String> keys = newschool.getThings();
 		assertEquals(2, keys.size(), "The number of things is not the expected");
 
@@ -35,7 +35,7 @@ public class FirstDayAtSchoolTest {
 		System.out.println("Inside testPrepareMyBag()");
 		school.prepareMyBag();
 		assertEquals(1, school.getNumberOf("Pens"), "The number of pens is not the expected");
-		assertEquals(1, school.getNumberOf("Notebooks"), "The number of Notebooks is not the expected");
+		assertEquals(1, school.getNumberOf("Sharpener"), "The number of Sharpener is not the expected");
 	}
 
 	@Test
